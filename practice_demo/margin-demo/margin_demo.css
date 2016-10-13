@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.indexBox{
+    width: 100%;
+    font-size: 0;
+}
+
+.clearfix{
+    overflow: hidden;
+}
+
+.photo1{
+    background-image: url("the_baileys_hotel_london.jpg");
+}
+
+.photo2{
+    background-image: url("the_chelsea_harbour_hotel.jpg");
+}
+
+.half_box{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.tpl_content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0 , -50%);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tpl_content .wgt_text{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tpl_content .wgt_btn{
+    text-transform: uppercase;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.tpl_content .wgt_btn:hover{
+    color: black;
+}
+
+.tpl-holder{
+    margin-top: 62%;
+}
