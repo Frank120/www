@@ -1,0 +1,24 @@
+<ion-view view-title="欢迎">
+  <ion-content>
+    <div class="login-title">
+      <img src="../img/logo.png" alt="">
+    </div>
+    <div class="content form-row">
+      <div class="login_style">
+        <label class="">
+          <input id="username" type="text" placeholder="手机号、账号" ng-model="user.username" autofocus>
+        </label>
+        <label class=" ">
+          <input id="password" type="password" placeholder="登陆密码" ng-model="user.password">
+        </label>
+      </div>
+    </div>
+    <div class="content form-row login_submit">
+      <button class="button form-button" ng-click="login(user)">登录</button>
+    </div>
+    <div class="content form-row login_footer">
+      <a href="" class="out-key">忘记密码？</a>
+      <a href="" class="right login-in">注册</a>
+    </div>
+  </ion-content>
+</ion-view>

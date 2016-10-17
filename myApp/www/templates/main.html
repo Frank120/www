@@ -1,0 +1,46 @@
+<ion-view view-title="首页">
+  <ion-header-bar align-title="center" class="main-header">
+      <h1 class="title">汇展</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="main-search">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="搜索" class="input" >
+  </div>
+    <div class="has-header ionic-pseudo">
+      <div class="list main-list">
+        <a class="item item-avatar">
+          <img src="../img/main01.png">
+          <h2>雅安市周公山精致茶厂 <span class="right">上午</span></h2>
+          <p>您收到一张优惠券</p>
+        </a>
+      </div>
+      <div class="list main-list">
+        <a class="item item-avatar">
+          <img src="../img/main02.png">
+          <h2>海南豆制品加工有限公司 <span class="right">上午</span></h2>
+          <p>您收到一张优惠券</p>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+  <div class="tabs tabs-icon-top">
+    <a class="tab-item">
+      <i class="icon ion-home"></i>
+      会展
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-star"></i>
+      展会
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-gear-a"></i>
+      资讯
+    </a>
+    <a class="tab-item" ng-click="goPage('me')">
+      <i class="icon ion-gear-a"></i>
+      我的
+    </a>
+  </div>
+
+</ion-view>

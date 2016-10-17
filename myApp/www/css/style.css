@@ -1,0 +1,113 @@
+/* Empty. Add your own CSS if you like */
+*{
+  font-family: "微软雅黑";
+}
+/*登陆页面*/
+.login-title {
+  text-align: center;
+}
+.login_style{
+  margin-top: 20%;
+}
+.login_style label {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  border-bottom: 1px solid  #D8D8D8;
+  padding-top: 20px;
+}
+
+.login_style input {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login_submit .button {;
+  background-color: #3BC8E3;
+  color: #ffffff;
+  border: none;
+  width:80%;
+  margin-left: 10%;
+  margin-top: 20%;
+  border-radius: 20px;
+}
+.login_footer{
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+.login_footer a{
+ text-decoration: none;
+}
+.out-key{
+  color:#3BC8E3;
+}
+.right{
+  float: right;
+}
+.login-in{
+  color:#858585;
+}
+/*首页*/
+.main-header{
+  background-color: #3BC8E3;
+}
+.main-header h1{
+  color: #ffffff;
+}
+.main-header .title{
+  font-weight: bold;
+}
+.main-search{
+  padding: 10px 0;
+  position: relative;
+}
+.input{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  height:40px;
+  background-color: #F0F8F9;
+  border-radius: 20px;
+}
+.main-search>i{
+  position: absolute;
+  top:34%;
+  left:42%;
+}
+.main-list>.item{
+  border-top:none;
+  border-bottom:1px solid  #D8D8D8 ;
+}
+.main-list a h2{
+  font-family: "微软雅黑";
+}
+.main-list a h2 span{
+  color:#929292;
+}
+/*我的*/
+.me .title{
+  font-weight: bold;
+}
+.me-banner{
+  padding-top: 10%;
+  text-align: center;
+}
+.me-letter span{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.me-letter span:nth-child(1){
+  border-right:2px solid #000000;
+}
+
+.me-introduce span{
+  display: inline-block;
+  padding: 0 10px;
+}
+.me-introduce span:nth-child(1){
+  border-right:2px solid #000000;
+}
+
