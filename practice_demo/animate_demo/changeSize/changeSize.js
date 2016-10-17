@@ -17,6 +17,7 @@ var animeteObject = {
         },2000).delay(400).animate({
 
         }).delay(400).animate({
+            //transform:"scale(0.9,0.9)",
             width:endWidth,
             height:endHeight,
             marginLeft:-25+'px',
