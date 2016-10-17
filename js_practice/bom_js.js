@@ -37,4 +37,38 @@
 //    }
 //}
 
-//page  217 导航和打开窗口
+//2016-10-17 导航和打开窗口
+
+//window.open()方法既可以导航到一个特定的url，也可以打开一个新的浏览窗口
+//可以接收四个参数
+/*1.需要加载的url
+2.窗口目标
+3.一个特性字符穿
+4.一个代表新页面是否取代刘浏览器历史中当前加载页面的布尔值
+！！！通常只需要传入第一个值，最后一个参数只再不打开新窗口的情况下传递
+*/
+
+//window.close(); 关闭新打开的窗口，仅适用于window.open()打开的窗口。
+
+//弹出窗口屏蔽程序
+
+//var blocked = false;
+//
+//try {
+//    var wroxWin = window.open("http://www.wrox.com","_blank");
+//
+//    if(wroxWin == null){
+//
+//        blocked = true;
+//    }
+//}catch (ex){
+//    blocked = true;
+//}
+//
+//if(blocked){
+//    alert("the popup was blocked!");
+//}
+
+
+
+//page 221  间隙调用和超时调用
