@@ -1,0 +1,6 @@
+clip : 裁减绝对定位元素   所有主流的浏览器都支持clip属性, 所有ie浏览器都不支持属性"inherit(规定应该从父元素继承该属性)"4
+      shape 设置元素的形状..  rect(top,right,bottom,left)
+
+
+
+出处：http://www.jianshu.com/p/70c1793fd766?utm_source=tuicool&utm_medium=referral#
