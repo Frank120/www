@@ -318,6 +318,8 @@ html{
     border-left-color: transparent;
     transform: rotate(45deg);
     animation: inner_ring3_content2 2s cubic-bezier(0.5,0,1,0.5) infinite;
+    /*贝塞尔曲线：以一条直线放在范围只有1的坐标轴中，并从中间拿出两个点来拉扯（x的取值区间是[0，1]，
+    y轴任意），最后形成的曲线就是动画的速度曲线*/
 }
 
 @keyframes inner_ring3_content2 {
