@@ -72,3 +72,7 @@
 
 
 //page 221  间隙调用和超时调用
+
+alert();
+confirm();
+prompt();
