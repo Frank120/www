@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.exp{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	color: #666;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.blcok{
+	width: 100px;
+	height: 100px;
+	background: #f60;
+}
+
+.change{
+	margin: 0 0 0 110px;
+}
+
+.change2{
+	margin: 0 110px 0 0;
+}
+
+.change3{
+	margin: 0 110px;
+}
