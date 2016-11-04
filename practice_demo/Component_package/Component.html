@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select id="sel_search" class='form_control'></select>
+</body>
+<script src='../../_lib/jquery-1.11.3.js'></script>
+<!-- <script src='Component.js'></script> -->
+<script src='selected.js'></script>
+<!-- <script src='self.js'></script> -->
+<script>
+	$(function(){
+		$("#sel_search").combobox({
+			url : '',
+			valueField :'this valueField',
+			textField : 'this textField'
+		})
+	})
+</script>
+</html>
