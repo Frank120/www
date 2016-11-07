@@ -3,14 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.search_box{
+			display: inline-block;
+			box-shadow: none;
+			box-sizing: border-box;
+			/*border: 1px solid black;*/
+			max-height: 100px;
+			overflow: auto;
+			text-align: center;
+		}
+		.myInput{
+			/*border: none;*/
+			box-shadow: none;
+		}
+		.search_ul{
+			list-style: n
+		}
+	</style>
 </head>
 <body>
 	<select id="sel_search" class='form_control'></select>
+
+	<div class="search_box"> 
+		<input type="text" placeholder="click there to search something" class="myInput">
+		<div class="search_container">
+			<ul class="search_ul">
+				<li class="search_li">000</li>
+				<li class="search_li">111</li>
+				<li class="search_li">222</li>
+				<li class="search_li">333</li>
+				<li class="search_li">444</li>
+				<li class="search_li">555</li>
+				<li class="search_li">666</li>
+				<li class="search_li">777</li>
+				<li class="search_li">888</li>
+				<li class="search_li">999</li>
+			</ul>
+		</div>
+	</div>
 </body>
 <script src='../../_lib/jquery-1.11.3.js'></script>
 <!-- <script src='Component.js'></script> -->
 <script src='selected.js'></script>
 <!-- <script src='self.js'></script> -->
+<!-- <script src='demo.js'></script> -->
 <script>
 	$(function(){
 		$("#sel_search").combobox({
@@ -20,4 +61,7 @@
 		})
 	})
 </script>
-</html>
+<!-- <iframe id="ifr" src="b.com/index.html" frameborder="0"></iframe> -->
+
+<script src='test.js'></script>
+</html> 	
