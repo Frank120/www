@@ -36,17 +36,17 @@ var methods = {
 				switch (e.keyCode){
 					case 38 :
 					if (selectedIndex != -1) {
-						selectedItem.removeClass(".selected");
+						selectedItem.removeClass("selected");
 						selectedIndex--;
-						$('.search_li[data-index ="'+selectedIndex+'"]').addClass(".selected");
+						$('.search_li[data-index ="'+selectedIndex+'"]').addClass("selected");
 					}
 					return false;
 					break;
 					case 40 :
 					if (selectedItem!= items.length - 1) {
-						selectedItem.removeClass(".selected");
+						selectedItem.removeClass("selected");
 						selectedItem++;
-						$('.search_li[data-index ="'+selectedIndex+'"]').addClass(".selected");
+						$('.search_li[data-index ="'+selectedIndex+'"]').addClass("selected");
 					}
 					return false;
 					break;
