@@ -25,13 +25,13 @@ var methods = {
 			return this.flag = true;
 		}
 	},
-	__keyupEvent : function(dom,targetDom,options){
+	__keyupEvent : function(dom,targetDom){
 		dom.on("keyup",function(e){
 			if (targetDom.length) {
 				var selectedItem = $('.search_li.selected'),
 				items = targetDom,
 				selectedIndex = Math.min(selectedItem.data("index") === undefined ? -1 : selectedItem.data("index"), items.length - 1),
-				offsetHeight = $(".search_container").offset().top;
+				offsetHeightW = $(".search_ul").offset().top;
 
 				switch (e.keyCode){
 					case 38 :
@@ -39,14 +39,25 @@ var methods = {
 						selectedItem.removeClass("selected");
 						selectedIndex--;
 						$('.search_li[data-index ="'+selectedIndex+'"]').addClass("selected");
+						if (selectedIndex > 0) {
+							var offsetHeightN = $('.search_li[data-index ="'+selectedIndex+'"]').offset().top;
+							//because inheight biger than outHeight
+							$(".search_box").scrollTop(offsetHeightN - offsetHeightW);
+						}else{
+							$(".search_box").scrollTop(0);
+						}
 					}
 					return false;
 					break;
 					case 40 :
-					if (selectedItem!= items.length - 1) {
+					if (selectedIndex!= items.length - 1) {
 						selectedItem.removeClass("selected");
-						selectedItem++;
+						selectedIndex++;
 						$('.search_li[data-index ="'+selectedIndex+'"]').addClass("selected");
+						var offsetHeightN = $('.search_li[data-index = "'+selectedIndex+'"]').offset().top + 10;
+						if (offsetHeightN > 100) {
+							$('.search_box').scrollTop(offsetHeightN - offsetHeightW);
+						}
 					}
 					return false;
 					break;
